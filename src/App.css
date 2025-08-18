@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Comic+Relief:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Knewave&family=Oi&family=Playwrite+AU+SA:wght@100..400&display=swap');
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+  margin:0;
+  padding:0;
+  min-height:100%;
+  background:#1f2032;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction:column;
+  /*border: 2px solid #ffffff;*/
+}
+.header{
+  height:30vh;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-bottom:5rem;
+  border: 2px solid black;
+}
+.header h1{
+  font-size: 3.5em;
+  color:rgb(255, 255, 255);
+  font-family: "Knewave", system-ui;
+  border: 2px solid red;
+}
+
+.showcreators, .addcreator{
+  
+  font-size:25px;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  padding: 12px 24px;   
+  background-color: #dacdff;
+  border-radius: 16px;          
+  cursor: pointer;
+  /* border: 2px solid blue; */
+}
+.main{
+
+  width:100vw;
+  height:70vh;
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+  /* border: 2px solid biege; */
+}
