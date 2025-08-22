@@ -31,7 +31,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Video Walkthrough](https://imgur.com/a/prework-yf4cIev)
+![Video Walkthrough](https://i.imgur.com/r9LoqFI.gif)
 
 ## Notes
 
