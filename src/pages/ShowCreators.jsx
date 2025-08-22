@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'
-import ViewCreator from './ViewCreator.jsx'
-import AddCreator from './AddCreator.jsx'
 import { Card } from '../components/Card'
 import { supabase } from '../client.js'
 import './ShowCreators.css'
@@ -10,7 +7,6 @@ export default function ShowCreators() {
 
     useEffect(() => {
         async function fetchData() {
-
             const {data,error} = await supabase
             .from('Creators')
             .select('*')
@@ -22,46 +18,25 @@ export default function ShowCreators() {
         }
         fetchData();
       }, []);
-    console.log(data);
+    // console.log(data);
     return (
       <div className="container">
         
-        <Card 
-          name="Creator Name 1"
-          desc="creator Desc"
-          url="creator.com"
-          imageUrl="image.jpg"
-        />
-        <Card 
-          name="Creator Name 2"
-          desc="creator Desc"
-          url="creator.com"
-          imageUrl="image.jpg"
-        />
-                <Card 
-          name="Creator Name 3"
-          desc="creator Desc"
-          url="creator.com"
-          imageUrl="image.jpg"
-        />
-                <Card 
-          name="Creator Name 4"
-          desc="creator Desc"
-          url="creator.com"
-          imageUrl="image.jpg"
-        />
-
+        {data && data.length > 0 ? (
           <div className="cards-wrapper">
-            {data && data.map((creator) => (
+            {data.map((creator) => (
             <Card
+
                 key={creator.id}
+                id={creator.id}
                 name={creator.name}
-                link={creator.link}
+                desc={creator.desc}
                 url={creator.url}
-                imageUrl={creator.imageUrl}
+                imageURL={creator.imageURL}
             />
             ))}
-        </div>
+            </div>
+        ) : (<h1>No creators</h1>)}
       </div>
       
     );

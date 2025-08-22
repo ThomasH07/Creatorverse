@@ -1,6 +1,21 @@
 .container {
     display: flex;
     flex-wrap: wrap;       
-    gap: 32px;                
+    gap: 1rem;                
     justify-content: center;
+}
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start; 
+}
+  
+.Card {
+    flex: 0 1 250px; 
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: white;
+    overflow: visible;
 }

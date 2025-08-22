@@ -5,8 +5,6 @@
   font-style: normal;
 }
 
-
-
 body {
   margin:0;
   padding:0;
@@ -18,6 +16,7 @@ body {
   flex-direction:column;
   /*border: 2px solid #ffffff;*/
 }
+
 .header{
   height:30vh;
   width:100vw;
@@ -25,19 +24,21 @@ body {
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  padding-bottom:5rem;
-  border: 2px solid black;
+
+  
+  /* border: 2px solid black; */
 }
+
 .header h1{
-  font-size: 3.5em;
+  font-size: 3.5rem;
   color:rgb(255, 255, 255);
   font-family: "Knewave", system-ui;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .showcreators, .addcreator{
   
-  font-size:25px;
+  font-size:1.4em;
   margin: 20px;
   color: rgb(0, 0, 0);
   padding: 12px 24px;   
@@ -46,12 +47,11 @@ body {
   cursor: pointer;
   /* border: 2px solid blue; */
 }
-.main{
 
-  width:100vw;
-  height:70vh;
-  display:flex; 
-  justify-content:center;
-  align-items:center;
-  /* border: 2px solid biege; */
+.main{
+  padding-top: 5rem;
+  width: 100vw;
+  height: 70vh;
+  /* border: 2px solid brown; */
+  overflow: auto;
 }
